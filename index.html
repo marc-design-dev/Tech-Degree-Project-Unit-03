@@ -20,29 +20,29 @@
             <P>Get the latest news on how your code is doing righ in your inbox</P>
         </div>
 
-        <form>
+        <form action="index.html" method="post">
 
             <fieldset class="contact_info">
-                <h2>Contact Information</h2>
+                <div class="heading"><legend>Contact Information</legend></div>
 
                 <label for="user_name">Full Name</label>
-                <input type="text" id="user_name" name="fullname" placeholder="*Required"><br>
+                <input required type="text" id="user_name" name="fullname" placeholder="*Required"><br>
 
                 <labeL for="user_email">Email Address</labeL>
-                <input type="email" id="user_email" name="email" placeholder="*Required"><br>
+                <input required type="email" id="user_email" name="email" placeholder="*Required"><br>
 
                 <labeL for="user_phone">Phone Number</labeL>
                 <input type="tel" id="user_phone" name="phone" ><br>
 
                 <labeL for="user_address">Street Address</labeL>
-                <input type="text" id="user_address" name="address"><br>
+                <input required type="text" id="user_address" name="address" placeholder="*Required"><br>
 
                 <labeL for="user_city">City</labeL>
                 <input type="text" id="user_city" name="city"><br>
                 
-                <label for="user_state">State</label>
-                <select>
-                    <option name="state" id="user_state" value="">Please Choose your State</option>
+                <label>State</label>
+                <select class="select">
+                    <option id="user_state" value="">Please Choose your State</option>
 
                     <option value="texas">Texas</option>
                     <option value="california">California</option>
@@ -57,16 +57,16 @@
             </fieldset>
 
             <fieldset class="newsletter">
-                <h2>Newsletter</h2>
+                <div class="heading"><legend>Newsletter</legend></div>
 
                 <label class="n_headings">Select the newsletter you would like to recieve</label><br>
-                <input type="checkbox" id="html" name="html"><label for="html">HTML News</label><br>
-                <input type="checkbox" id="css" name="css"><label for="css">CSS News</label><br>
-                <input type="checkbox" id="javascript" name="javascript"><label for="javascript">Javascript News</label><br>
+                <input type="checkbox" id="html" name="html" value="html"><label for="html">HTML News</label><br>
+                <input type="checkbox" id="css" name="css" value="css"><label for="css">CSS News</label><br>
+                <input type="checkbox" id="javascript" name="javascript" value="javascript"><label for="javascript">Javascript News</label><br>
                 
                 <label class="n_headings">Newsletter format</label><br>
-                <input type="radio" id="f_html" name="format"><label for="f_html">HTML</label><br>
-                <input type="radio" id="f_plain" name="format"><label for="f_plain">Plain Text</label><br>
+                <input type="radio" id="f_html" name="format" value="html_newsletter"><label for="f_html">HTML</label><br>
+                <input type="radio" id="f_plain" name="format" value="plain_newsletter"><label for="f_plain">Plain Text</label><br>
 
                 <label for="topics">Other topics you'd like to hear about</label><br>
                 <textarea id="topics" name="topics"></textarea>

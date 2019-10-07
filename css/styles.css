@@ -24,9 +24,7 @@
 .secondary_header {
     text-align: center;
     margin: 0px 4%;
-    border-bottom: solid 4px rgb(31, 56, 66);
-    margin-bottom: 4px;
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 .secondary_header h2 {
@@ -42,25 +40,32 @@
 }
 
 .contact_info {
+    background-color: rgb(61, 88, 99);
     display: flex;
     border:none;
-    border-top: solid 1px rgb(31, 56, 66);
-    margin: 0 4%;
-    padding: 10px 0 20px 0;
+    padding: 10px 4% 20px ;
+    margin: 0;
 }
 
-.contact_info h2, .newsletter h2 {
+.contact_info legend, .newsletter legend {
     font-size: 1.1em;
-    padding-bottom: 10px;
+}
+.contact_info legend {
+    color: white;
+}
+.heading {
+    display: flex;
+    margin-bottom: 10px;
+
 }
 
 .contact_info label {
     font-size: 0.8em;
-    color: rgb(143, 143, 143);
+    color: rgb(231, 231, 231);
     padding-bottom: 8px;
 }
 
-.contact_info input, select, textarea {
+.contact_info input, textarea {
     background-color: rgb(240, 240, 240);
     border:none;
     width: 100%;
@@ -73,11 +78,21 @@ select {
     font-size: 0.6em;
     color: rgb(202, 201, 201);
 }
+.select {
+    background-color: rgb(240, 240, 240);
+    border:none;
+    width: 100%;
+    height: 32px;
+    font-size: 0.6em;
+    color: rgb(117, 117, 117);
+    border-radius: 5px;
+    padding-left: 15px;
+}
 
 input:focus, textarea:focus, select:focus {
     border:none;
     outline: none;
-    border: solid 1.2px rgb(31, 56, 66);
+    border: solid 2px rgb(209, 173, 11);
 }
 
 input[name="zip"] {
@@ -93,11 +108,10 @@ input[name="zip"] {
 }
 
 .newsletter {
-    
     border:none;
-    border-top: solid 2px rgb(31, 56, 66);
-    margin: 0 4%;
-    padding: 10px 0 20px 0;
+    border-bottom: solid 2px rgb(31, 56, 66);
+    margin: 0 4% 10px;
+    padding: 10px 0 10px 0;
     font-size: 1.1em;
 }
 .newsletter label {
@@ -114,24 +128,43 @@ input[name="zip"] {
 
 textarea {
     height: 100px;
+    transition: background-color 1s ease;
+    background-color: rgb(61, 88, 99);
 }
+
+textarea:focus {
+    background-color: rgb(231, 231, 231);
+}
+
 
 input[type="radio"], input[type="checkbox"] {
     margin-right: 10px;
 }
 
 button {
+    transition: background-color 0.5s ease;
     background-color: rgb(31, 56, 66);
     color: white;
     padding: 15px 0;
     border-radius: 5px;
     width: 92%;
-    margin: 0 4%;;
+    margin: 0 4%;
+    font-weight: bold;
 }
 
+button:hover {
+    background-color: rgb(209, 173, 11);
+    cursor: pointer;
+}
+
+.main_footer {
+    background-color: rgb(31, 56, 66);
+    height: 50px;
+}
 .main_footer p {
     font-size: 0.6em;
-    color: rgb(143, 143, 143);
+    color: rgb(255, 255, 255);
     text-align: center;
     margin: 20px 0;
+    padding-top: 18px;
 }
