@@ -1,0 +1,137 @@
+* {
+    font-family: 'Playfair Display', serif;
+    box-sizing: border-box;
+}
+
+.main_header {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: rgb(31, 56, 66);
+    font-size: 0.6em;
+    text-align: center;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+.main_header h1 {
+    margin-top: 0;
+    padding-top: 25px;
+    letter-spacing: 2px;
+}
+
+.secondary_header {
+    text-align: center;
+    margin: 0px 4%;
+    border-bottom: solid 4px rgb(31, 56, 66);
+    margin-bottom: 4px;
+    padding: 15px 0;
+}
+
+.secondary_header h2 {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.secondary_header p {
+    font-size: 0.9em;
+    color: rgb(163, 163, 163);
+    margin-top: 0px;
+}
+
+.contact_info {
+    display: flex;
+    border:none;
+    border-top: solid 1px rgb(31, 56, 66);
+    margin: 0 4%;
+    padding: 10px 0 20px 0;
+}
+
+.contact_info h2, .newsletter h2 {
+    font-size: 1.1em;
+    padding-bottom: 10px;
+}
+
+.contact_info label {
+    font-size: 0.8em;
+    color: rgb(143, 143, 143);
+    padding-bottom: 8px;
+}
+
+.contact_info input, select, textarea {
+    background-color: rgb(240, 240, 240);
+    border:none;
+    width: 100%;
+    padding:8px 15px 10px;
+    font-size: 0.8em;
+    color: rgb(117, 117, 117);
+    border-radius: 5px;
+}
+select {
+    font-size: 0.6em;
+    color: rgb(202, 201, 201);
+}
+
+input:focus, textarea:focus, select:focus {
+    border:none;
+    outline: none;
+    border: solid 1.2px rgb(31, 56, 66);
+}
+
+input[name="zip"] {
+    width: 50%;
+}
+
+::placeholder {
+    font-size: .6em;
+    text-align: right;
+    align-content: center;
+    color: rgb(202, 201, 201);
+    font-style: italic;
+}
+
+.newsletter {
+    
+    border:none;
+    border-top: solid 2px rgb(31, 56, 66);
+    margin: 0 4%;
+    padding: 10px 0 20px 0;
+    font-size: 1.1em;
+}
+.newsletter label {
+    display: inline-block;
+    font-size: 0.7em;
+    color: rgb(143, 143, 143);
+    padding-bottom: 20px;
+}
+.newsletter .n_headings {
+    font-size: 0.8em;
+    padding-bottom: 10px;
+
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    background-color: rgb(31, 56, 66);
+    color: white;
+    padding: 15px 0;
+    border-radius: 5px;
+    width: 92%;
+    margin: 0 4%;;
+}
+
+.main_footer p {
+    font-size: 0.6em;
+    color: rgb(143, 143, 143);
+    text-align: center;
+    margin: 20px 0;
+}

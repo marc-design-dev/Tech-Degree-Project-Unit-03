@@ -4,20 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&display=swap" rel="stylesheet">
     <title>Forms</title>
 </head>
 <body>
-    <header>
-         
+    <header class="main_header">
+        <h1>The Code Review</h1> 
     </header>
     
     <main>
+        <div class="secondary_header">
+            <h2>Signup for our newsletter</h2>
+            <P>Get the latest news on how your code is doing righ in your inbox</P>
+        </div>
+
+        <form>
+
+            <fieldset class="contact_info">
+                <h2>Contact Information</h2>
+
+                <label for="user_name">Full Name</label>
+                <input type="text" id="user_name" name="fullname" placeholder="*Required"><br>
+
+                <labeL for="user_email">Email Address</labeL>
+                <input type="email" id="user_email" name="email" placeholder="*Required"><br>
+
+                <labeL for="user_phone">Phone Number</labeL>
+                <input type="tel" id="user_phone" name="phone" ><br>
+
+                <labeL for="user_address">Street Address</labeL>
+                <input type="text" id="user_address" name="address"><br>
+
+                <labeL for="user_city">City</labeL>
+                <input type="text" id="user_city" name="city"><br>
+                
+                <label for="user_state">State</label>
+                <select>
+                    <option name="state" id="user_state" value="">Please Choose your State</option>
+
+                    <option value="texas">Texas</option>
+                    <option value="california">California</option>
+                    <option value="florida">Florida</option>
+                    <option value="newjersey">New Jersey</option>
+                    <option value="Arizona">Arizona</option>
+                </select><br>
+
+                <labeL for="user_zip">Zip Code</labeL>
+                <input type="text" id="user_zip" name="zip">
+
+            </fieldset>
+
+            <fieldset class="newsletter">
+                <h2>Newsletter</h2>
+
+                <label class="n_headings">Select the newsletter you would like to recieve</label><br>
+                <input type="checkbox" id="html" name="html"><label for="html">HTML News</label><br>
+                <input type="checkbox" id="css" name="css"><label for="css">CSS News</label><br>
+                <input type="checkbox" id="javascript" name="javascript"><label for="javascript">Javascript News</label><br>
+                
+                <label class="n_headings">Newsletter format</label><br>
+                <input type="radio" id="f_html" name="format"><label for="f_html">HTML</label><br>
+                <input type="radio" id="f_plain" name="format"><label for="f_plain">Plain Text</label><br>
+
+                <label for="topics">Other topics you'd like to hear about</label><br>
+                <textarea id="topics" name="topics"></textarea>
+            </fieldset>
+                <button class="submit_btn" type="submit">Sign Up</button>
+
+        </form>
 
     </main>
 
-    <footer>
-
+    <footer class="main_footer">
+<p><i>Copyright The Code Review</i></p>
     </footer>
 </body>
 </html>
