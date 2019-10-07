@@ -38,9 +38,16 @@
     color: rgb(163, 163, 163);
     margin-top: 0px;
 }
+.background_element {
+    background-color: rgb(61, 88, 99);
+    padding-top: 15px;
+}
+
+.background_element2 {
+    padding-top: 15px;
+}
 
 .contact_info {
-    background-color: rgb(61, 88, 99);
     display: flex;
     border:none;
     padding: 10px 4% 20px ;
@@ -49,14 +56,10 @@
 
 .contact_info legend, .newsletter legend {
     font-size: 1.1em;
+    font-weight: bold;
 }
 .contact_info legend {
     color: white;
-}
-.heading {
-    display: flex;
-    margin-bottom: 10px;
-
 }
 
 .contact_info label {

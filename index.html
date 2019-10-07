@@ -21,43 +21,44 @@
         </div>
 
         <form action="index.html" method="post">
+            <div class="background_element">
+                <fieldset class="contact_info">
+                    <legend>Contact Information</legend>
+                    
+                    <label for="user_name">Full Name</label>
+                    <input required type="text" id="user_name" name="fullname" placeholder="*Required"><br>
 
-            <fieldset class="contact_info">
-                <div class="heading"><legend>Contact Information</legend></div>
+                    <labeL for="user_email">Email Address</labeL>
+                    <input required type="email" id="user_email" name="email" placeholder="*Required"><br>
 
-                <label for="user_name">Full Name</label>
-                <input required type="text" id="user_name" name="fullname" placeholder="*Required"><br>
+                    <labeL for="user_phone">Phone Number</labeL>
+                    <input type="tel" id="user_phone" name="phone" ><br>
 
-                <labeL for="user_email">Email Address</labeL>
-                <input required type="email" id="user_email" name="email" placeholder="*Required"><br>
+                    <labeL for="user_address">Street Address</labeL>
+                    <input required type="text" id="user_address" name="address" placeholder="*Required"><br>
 
-                <labeL for="user_phone">Phone Number</labeL>
-                <input type="tel" id="user_phone" name="phone" ><br>
+                    <labeL for="user_city">City</labeL>
+                    <input type="text" id="user_city" name="city"><br>
+                    
+                    <label>State</label>
+                    <select class="select">
+                        <option id="user_state" value="">Please Choose your State</option>
 
-                <labeL for="user_address">Street Address</labeL>
-                <input required type="text" id="user_address" name="address" placeholder="*Required"><br>
+                        <option value="texas">Texas</option>
+                        <option value="california">California</option>
+                        <option value="florida">Florida</option>
+                        <option value="newjersey">New Jersey</option>
+                        <option value="Arizona">Arizona</option>
+                    </select><br>
 
-                <labeL for="user_city">City</labeL>
-                <input type="text" id="user_city" name="city"><br>
-                
-                <label>State</label>
-                <select class="select">
-                    <option id="user_state" value="">Please Choose your State</option>
+                    <labeL for="user_zip">Zip Code</labeL>
+                    <input type="text" id="user_zip" name="zip">
 
-                    <option value="texas">Texas</option>
-                    <option value="california">California</option>
-                    <option value="florida">Florida</option>
-                    <option value="newjersey">New Jersey</option>
-                    <option value="Arizona">Arizona</option>
-                </select><br>
-
-                <labeL for="user_zip">Zip Code</labeL>
-                <input type="text" id="user_zip" name="zip">
-
-            </fieldset>
-
+                </fieldset>
+        </div>
+        <div class="background_element2">
             <fieldset class="newsletter">
-                <div class="heading"><legend>Newsletter</legend></div>
+                <legend>Newsletter</legend>
 
                 <label class="n_headings">Select the newsletter you would like to recieve</label><br>
                 <input type="checkbox" id="html" name="html" value="html"><label for="html">HTML News</label><br>
@@ -72,7 +73,7 @@
                 <textarea id="topics" name="topics"></textarea>
             </fieldset>
                 <button class="submit_btn" type="submit">Sign Up</button>
-
+        </div>
         </form>
 
     </main>
