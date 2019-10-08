@@ -24,7 +24,7 @@
 .secondary_header {
     text-align: center;
     margin: 0px 4%;
-    padding: 10px 0;
+    padding: 10px 0 15px;
 }
 
 .secondary_header h2 {
@@ -45,10 +45,11 @@
 
 .background_element2 {
     padding-top: 15px;
+    margin: 0 4%;
 }
 
 .contact_info {
-    display: flex;
+   
     border:none;
     padding: 10px 4% 20px ;
     margin: 0;
@@ -57,12 +58,14 @@
 .contact_info legend, .newsletter legend {
     font-size: 1.1em;
     font-weight: bold;
+    padding: 5px 0 10px; 
 }
 .contact_info legend {
     color: white;
 }
 
 .contact_info label {
+    display: flex;
     font-size: 0.8em;
     color: rgb(231, 231, 231);
     padding-bottom: 8px;
@@ -76,6 +79,7 @@
     font-size: 0.8em;
     color: rgb(117, 117, 117);
     border-radius: 5px;
+    display: flex;
 }
 select {
     font-size: 0.6em;
@@ -90,6 +94,7 @@ select {
     color: rgb(117, 117, 117);
     border-radius: 5px;
     padding-left: 15px;
+    margin-bottom: 15px;
 }
 
 input:focus, textarea:focus, select:focus {
@@ -99,7 +104,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 input[name="zip"] {
-    width: 50%;
+    width: 30%;
 }
 
 ::placeholder {
@@ -113,7 +118,7 @@ input[name="zip"] {
 .newsletter {
     border:none;
     border-bottom: solid 2px rgb(31, 56, 66);
-    margin: 0 4% 10px;
+    margin: 0 0 10px;
     padding: 10px 0 10px 0;
     font-size: 1.1em;
 }
@@ -150,8 +155,7 @@ button {
     color: white;
     padding: 15px 0;
     border-radius: 5px;
-    width: 92%;
-    margin: 0 4%;
+    width: 100%;
     font-weight: bold;
 }
 
@@ -170,4 +174,66 @@ button:hover {
     text-align: center;
     margin: 20px 0;
     padding-top: 18px;
+}
+
+/* Media Quaries */
+
+@media (min-width: 768px) {
+
+.contact_info{
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+    padding: 0 10px;
+}
+
+.contact_info label {
+  display: inline-block;
+    width: 14%;
+}
+.contact_info input, .contact_info select {
+    width:85%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+input[name="zip"] {
+    width: 20%;
+}
+
+.contact_info legend {
+    padding-bottom: 30px;
+}
+
+.background_element {
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.newsletter {
+    max-width: 800px;
+    width: 100%;
+    margin:auto;
+}
+
+.newsletter legend {
+    padding-bottom: 10px;
+}
+
+.background_element2{
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+  padding-top: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+textarea {
+    margin-bottom: 10px;
+}
+button {
+    margin-top: 20px;
+}
+
 }
